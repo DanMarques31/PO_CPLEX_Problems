@@ -130,8 +130,8 @@ bool read_input(const string &file_name) {
         else
             add_aresta(arestas, index_origem, index_destino, custo, fluxo_max, 0);
 
-        custos[index_origem][index_destino].custo = arestas[i].custo;
-        custos[index_origem][index_destino].fluxo_max = arestas[i].fluxo_max;
+        custos[index_origem][index_destino].custo = custo;
+        custos[index_origem][index_destino].fluxo_max = fluxo_max;
     }
 
     infile.close();
